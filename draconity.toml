@@ -1,0 +1,17 @@
+timeout = 80
+timeout_incomplete = 500
+prevent_wake = 1
+secret = "XbusEmwUdOL0VK16k3Z3Ug"
+# logfile = "C:\\Users\\user\\AppData\\Roaming\\talon\\draconity.log"
+
+[[socket]]
+host = "127.0.0.1"
+port = 38065
+
+# [[socket]]
+# host = "127.0.0.1"
+# port = 38065
+
+# [[remote]]
+# host = "127.0.0.1"
+# port = 38065

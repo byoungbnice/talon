@@ -1,0 +1,24 @@
+{
+  "for": {
+    "definitions": [
+      {
+        "scope": {
+          "langIds": [
+            "go"
+          ]
+        },
+        "body": [
+          "for $iterator := $range {",
+          "\t$body",
+          "}"
+        ]
+      }
+    ],
+    "description": "",
+    "variables": {
+      "iterator": {  },
+      "range": {},
+      "body": {}
+    }
+  }
+}

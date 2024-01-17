@@ -1,0 +1,7 @@
+func () {
+	
+}
+
+type  struct {
+	
+}

@@ -1,0 +1,22 @@
+{
+  "nullCheck": {
+    "definitions": [
+      {
+        "scope": {
+          "langIds": [
+            "python"
+          ]
+        },
+        "body": [
+          "if $variable is None:",
+          "\t$body"
+        ]
+      }
+    ],
+    "description": "Checks is for variable null",
+    "variables": {
+      "variable": {},
+      "body": {}
+    }
+  }
+}

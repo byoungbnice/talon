@@ -1,0 +1,23 @@
+{
+  "typeStruct": {
+    "definitions": [
+      {
+        "scope": {
+          "langIds": [
+            "go"
+          ]
+        },
+        "body": [
+          "type $type struct {",
+          "\t$body",
+          "}"
+        ]
+      }
+    ],
+    "description": "",
+    "variables": {
+      "type": {},
+      "body": {}
+    }
+  }
+}

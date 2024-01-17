@@ -1,0 +1,7 @@
+.sys/
+venv/
+.venv/
+bin.lnk
+bin/
+./talon.log
+talon.log
