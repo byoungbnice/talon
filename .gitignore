@@ -3,5 +3,6 @@ venv/
 .venv/
 bin.lnk
 bin/
+bin
 ./talon.log
 talon.log
