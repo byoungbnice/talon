@@ -4,19 +4,23 @@ key(f8): speech.toggle()
 focus taskbar: key(super-t)
 focus desktop: key(super-d)
 focus system tray: key(super-b)
-code: user.switcher_focus("code")
-(fox|portal): user.switcher_focus("firefox")
+code: user.switcher_focus("Code")
+#(fox|portal): user.switcher_focus("firefox")
+(chrome|fox|portal): user.switcher_focus("Google Chrome")
+outlook: user.switcher_focus("Microsoft Outlook")
 slack: user.switcher_focus("slack")
-term: user.switcher_focus("gnome terminal")
+#term: user.switcher_focus("gnome terminal")
+term: user.switcher_focus("term")
 xterm: user.switcher_focus("x term")
 ########## git 
 get: "git "
 get add: "git add "
+get branch: "git branch\n"
 get clone: "git clone "
-get pull: "git pull "
+get pull: "git pull\n"
 get push: "git push "
 get remove: "git rm "
-get status: "git status "
+get status: "git status\n"
 get commit: "git commit "
 ########## navigation
 copy: edit.copy()
