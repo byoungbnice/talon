@@ -4,5 +4,6 @@ venv/
 bin.lnk
 bin/
 bin
+user/community/
 ./talon.log
 talon.log
