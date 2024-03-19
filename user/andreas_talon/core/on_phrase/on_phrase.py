@@ -28,7 +28,8 @@ def on_pre_phrase(phrase: Phrase):
         text = sleep_update_phrase(phrase)
 
     if text:
-        show_subtitle(text)
+	# byoung 20240308 comment out subtitles
+        #show_subtitle(text)
         print_phrase_timings(phrase)
 
 
