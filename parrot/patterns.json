@@ -3,7 +3,7 @@
 		"sounds": ["click_alveolar"],
 		"threshold": {
 			">power": 20,
-			">probability": 0.85
+			">probability": 0.95
 		},
 		
 		"throttle": {

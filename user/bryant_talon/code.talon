@@ -5,6 +5,7 @@ app: visual studio code
 show hats: key("super-h")
 #open file: key("ctrl-o")
 open file: key("super-o")
+push: key(end)
 go file <user.text>: 
     key("super-p")
     "{text}"

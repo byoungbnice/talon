@@ -10,6 +10,7 @@ tail:                       edit.line_end()
 center:                     user.line_middle()
 
 up:                         edit.up()
+don: "dawn"
 down:                       edit.down()
 left:                       edit.left()
 right:                      edit.right()

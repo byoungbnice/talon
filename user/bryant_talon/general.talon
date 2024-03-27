@@ -5,11 +5,33 @@ key(f8): speech.toggle()
 focus taskbar: key(super-t)
 focus desktop: key(super-d)
 focus system tray: key(super-b)
-focus word: user.switcher_focus("Microsoft Word")
+focus word: app.switcher_focus("Microsoft Word")
+########## Work Words
+(ollie|ally): "o11y "
+(ollie|ally|olly) apply: "o11yapply "
+(ollie|ally|olly) delete: "o11ydelete "
+(paying|pan): "peng"
+aws: "AWS"
+app: "app"
+cpe: "cpe"
+diff: "diff"
+disco: "disco"
+don: "dawn"
+dmytro: "Dmytro"
+: "jira"
+mds: "mds"
+non: "nonprod"
+obf: "obf"
+octa: "okta"
+openssl: "openssl"
+perf: "perf"
+pr: "PR"
+preview: "prvw"
+(prodding|prod edge): "prodeng"
+prod: "prod"
+san box: "sbox"
+SRE: "SRE"
 ##########
-(ollie|ally): "o11y"
-olly delete: "o11ydelete"
-olly apply: "o11yapply"
 capture portion: key("super-shift-5")
 capture screen: key("super-shift-3")
 code:  
@@ -93,9 +115,23 @@ get status: "git status\n"
 next: key("tab")
 #nope: edit.undo()
 nope: user.clear_last_phrase()
-pick <number>: key("down:{number-1}") 
+# select from a list with the keyboard
+# https://github.com/nriley/talon_community/blob/nriley/core/pick.talon#L15
+(pic | pick): key(return)
+(pic | pick) <number_small>:
+    key("down:{number_small - 1}")
+    sleep(50ms)
+    key(return)
+(pic | pick) down <number_small>:
+    key("down:{number_small}")
+    sleep(50ms)
+    key(return)
+(pic | pick) up <number_small>:
+    key("up:{number_small}")
+    sleep(50ms)
+    key(return)
 settings: key("super-," )
-switch app: key("ctrl-down" )
+switch app: key("ctrl-down")
 <user.arrow_keys>: user.move_cursor(arrow_keys)
 <user.modifiers> (touch | click):
     key("{modifiers}:down")
