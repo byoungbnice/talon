@@ -70,14 +70,14 @@ class Actions:
         """Put Talon to sleep"""
         actions.speech.disable()
         actions.user.mouse_sleep()
-        #actions.user.notify("Talon sleeping")
+        actions.user.notify("Zzzz...")
 
     def talon_wake():
         """Wake Talon from sleep"""
+        actions.user.notify("Yes")
         actions.user.abort_current_phrase()
         actions.speech.enable()
         actions.user.mouse_wake()
-        #actions.user.notify("Talon awake")
         #if not actions.user.sound_microphone_enabled():
             #actions.user.sound_microphone_enable(True)
 
