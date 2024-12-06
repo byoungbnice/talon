@@ -1,11 +1,14 @@
 # chrome://extensions/shortcuts
 ^c m$: "CM "
 ^Dawn$: "Dawn"
+^David$: "David"
 ^dee pack$: "Dipak"
 ^da me tro$: "Dmytro"
 ^da me tree$: "Dmitri"
 ^why lena$: "Ylena"
+^M D$: "MD"
 ^pre thee$: "Preethi"
+^ti sa ra$: "Thisara"
 ^rake one$:
 	user.switcher_focus("iTerm2")
 	key(super-3)
@@ -32,6 +35,7 @@ bar: key(super-t)
 ^are chana$: "Archana"
 ^aws$: "aws"
 ^app$: "app"
+(outo serve|auto serve): "autoserv"
 ^cpe$: "cpe"
 ^diff$: "diff"
 ^disco$: "disco"
@@ -99,12 +103,10 @@ key(keypad_plus):
 	#user.talon_wake()
 	speech.enable()    
     # yeti microphone
-    # user.microphone_select(5)  
-    # yet
+    #user.microphone_select(4)
+    # Blue Snowball
     # wireless mouse only
-    #user.microphone_select(4) 
-    user.microphone_select(5) 
-    # usb 
+    user.microphone_select(3)
 #key(alt-1): user.microphone_select(1)
 key(keypad_minus):
 	#user.talon_sleep()
@@ -112,6 +114,7 @@ key(keypad_minus):
     user.microphone_select(1)
     #mouse_sleep()
 ^mail: user.switcher_focus("Microsoft Outlook")
+^zoom$: user.switcher_focus("zoom.us")
 ^mouse keys$:
     key("alt")
     sleep(300ms)
@@ -125,28 +128,19 @@ key(keypad_minus):
     sleep(300ms)
     key("alt") 
     "mouse keys"
+^obsidian: user.switcher_focus("Obsidian")
+^prod (edge|eng): "prodeng"
 ^slack: user.switcher_focus("Slack")
 #term: user.switcher_focus("gnome terminal")
 ^eye term: user.switcher_focus("iTerm2")
 ^ldap$: "ldap"
+^lisa$: "ls -latr\n"
 ^o s d$: "osd"
 ^(term|term two|shell)$: user.switcher_focus("iTerm2")
 ^talent$: "talon"
 ^thy sodic$: "Thycotic"
 ^xterm$: user.switcher_focus("x term")
 ^yum$: "yum"
-########## git 
-get: "git "
-get add: "git add "
-get branch: "git branch\n"
-get clone: "git clone "
-get commit: 
-    "git commit -a -m \"\""
-    key(left)
-get pull: "git pull\n"
-get push: "git push "
-get remove: "git rm "
-get status: "git status\n"
 ^(cute|kube) control: "kubectl "
 ^(cute|kube) config: "kubeconfig"
 ^(cute|kube): "kube"
@@ -184,6 +178,14 @@ switch app: key("ctrl-down")
 r sink: "rsync "
 run: key(ctrl-f5)
 s e s: "AWS SES "
+trick: 
+    # close zoom if open
+    user.zoom_close()
+    mouse_click()
+    mouse_click()
+    mouse_click()
+    # close the mouse grid
+    user.grid_close()
 ########## tab <user.ordinals>: user.tab_jump(ordinals)
 tab {self.letter} [{self.letter}]:
     user.run_rpc_command("andreas.focusTab", "{letter_1}{letter_2 or ''}")
