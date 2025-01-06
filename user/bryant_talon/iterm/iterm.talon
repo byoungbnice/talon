@@ -75,6 +75,8 @@ core {user.unix_utility}: "{unix_utility} "
 ^foreground$: "fg\n"
 ^fuzzy$: key(ctrl-r)
 ########## git 
+get jenkins credentials:
+	"cat ~/scripts/get_jenkins_credentials.groovy\n"
 get: "git "
 get add: "git add "
 get branch: "git branch\n"

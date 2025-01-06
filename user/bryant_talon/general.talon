@@ -103,10 +103,10 @@ key(keypad_plus):
 	#user.talon_wake()
 	speech.enable()    
     # yeti microphone
-    #user.microphone_select(4)
+    user.microphone_select(4)
     # Blue Snowball
     # wireless mouse only
-    user.microphone_select(3)
+    # user.microphone_select(3)
 #key(alt-1): user.microphone_select(1)
 key(keypad_minus):
 	#user.talon_sleep()

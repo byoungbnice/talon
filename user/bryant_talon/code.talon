@@ -15,6 +15,15 @@ app: visual studio code
 ^death$: "def"
 ^(get|git) blame$: 
     key(alt-cmd-g b)
+^go t$:
+	edit.save()
+    sleep(200ms)
+	user.switcher_focus("iTerm2")
+    sleep(200ms)
+	key(up)
+    sleep(200ms)
+	key(enter)
+
 ^go d$: 
 	edit.save()
     sleep(200ms)
